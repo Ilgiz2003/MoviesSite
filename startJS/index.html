@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div id="calculationSection" style="display: none;">
+    <h2>Расчет длины каблука</h2>
+    <label class="radio-label">
+        <input type="radio" name="gender" value="male">Мужской
+    </label>
+    <label class="radio-label">
+        <input type="radio" name="gender" value="female">Женский
+    </label>
+    <br><br>
+    <label for="footLength">Длина стопы (см):</label>
+    <input type="text" id="footLength" name="footLength"><br><br>
+    <button class="button" onclick="calculateHeelHeight()">Рассчитать</button>
+    <h3 id="resultText"></h3>
+    <img id="shoeImage" class="shoe-image">
+</div>
+<div id="barefootSection" style="display: none;">
+    <h2>Ходите босиком</h2>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+.field{
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to left,#c2dbef, #f0f1e0);
+}
+
+.sun{
+  width: 50px;
+  height: 50px;
+  background: #fbf79c;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}
+.gate1{
+  width: 51px;
+  height: 190px;
+  background-color: transparent;
+  border: 8px solid #9b9d9d;
+  border-radius:40px;
+  position: absolute;
+  bottom: -50px;
+  z-index: 1;
+}
+.gate2{
+  width: 51px;
+  height: 190px;
+  background-color: transparent;
+  border: 8px solid #9b9d9d;
+  border-radius:40px;
+  position: absolute;
+  left: 67px;
+  bottom: -50px;
+  z-index: 1;
+}
+
+.gate3{
+  width: 51px;
+  height: 190px;
+  background-color: transparent;
+  border: 8px solid #9b9d9d;
+  border-radius:40px;
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  z-index: 1;
+}
+.water1{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(to left,#75a3f5, #b0d2f5);
+  position: absolute;
+  left: -10px;
+  bottom: -20px;
+  z-index: 3;
+}
+
+.water2{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(to left,#75a3f5, #b0d2f5);
+  position: absolute;
+  left: 40px;
+  bottom: -15px;
+  z-index: 3;
+}
+
+.water3{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(to left,#75a3f5, #b0d2f5);
+  position: absolute;
+  left: 90px;
+  bottom: -30px;
+  z-index: 3;
+}
+
+.water4{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(to left,#75a3f5, #b0d2f5);
+  position: absolute;
+  right: -20px;
+  bottom: -10px;
+  z-index: 3;
+}
+
+.ship{
+  height: 20px;
+  width: 50px;
+  border-bottom: 50px solid #82571d;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleY(-1);
+  position: absolute;
+  left: 62px;
+  bottom: -5px;
+  z-index: 2
+}
+
+.mast{
+  width: 7px;
+  height: 135px;
+  background: #9a672e;
+  position: absolute;
+  left: 90px;
+  bottom: 20px;
+  z-index: 1;
+}
+
+.flag{
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 14px solid #e42046;
+  border-bottom: 7px solid transparent;
+  position: absolute;
+  left: 90px;
+  top: 41px;
+  z-index: 4;
+}
+
+.sail{
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-left: 36px solid #88e9f2;
+  border-bottom: 40px solid transparent;
+  position: absolute;
+  left: 97px;
+  top: 54px;
+  z-index: 4;
+}
+
+.window{
+  width: 10px;
+  height: 10px;
+  background: #fbf79c;
+  border: 4px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 110px;
+  bottom: 40px;
+  z-index: 5;
+}
