@@ -1,0 +1,107 @@
+
+body > div {
+    width: 200px;
+    height: 200px;
+}
+
+.block_animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.block_animation2 {
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.block_animation3 {
+    position: absolute;
+    top: 50%;
+    left: 86%;
+    width: 200px;
+    height: 200px;
+    transform: translate(0, -50%);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.image {
+    opacity: 0;
+}
+
+.text {
+    opacity: 0;
+}
+
+svg:active .image {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+svg:active .text {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.block_animation:active .D {
+    animation: scale 3s linear infinite alternate;
+}
+
+.block_animation:active .I {
+    animation: scale 3s linear infinite alternate;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+svg:hover .D {
+    position: absolute;
+    offset-path: path('M0 0 L -40 50 , -70 15, -130 90z');
+    animation: bA 5s linear infinite;
+    offset-rotate: -0deg;
+}
+
+svg:hover .I {
+    position: absolute;
+    offset-path: path('M0 0 L 40 -50,70 -15,  130 -90z');
+    offset-rotate: -0deg;
+    animation: bA 5s linear infinite;
+}
+
+@keyframes bA {
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+svg:active {
+    animation: scale 10s linear infinite alternate;
+}
+
+
