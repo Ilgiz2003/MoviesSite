@@ -17,5 +17,5 @@ document.getElementById('hardBtn').addEventListener('click', function() {
 });
 
 document.getElementById('menuBtn').addEventListener('click', function() {
-    window.location.href = '../startMenu.html';
+    window.location.href = '../index.html';
 });
